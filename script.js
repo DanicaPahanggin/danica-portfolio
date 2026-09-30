@@ -13,7 +13,7 @@ const P=[
  features:['Tenant management','Room management','Room availability','Payment notifications','Announcements','Problem reporting','Garbage collection scheduling'],
  tech:['Android Studio']},
 {slug:'cakeland',n:'03',cat:'UI/UX Design',title:'CakeLand Express',sub:'Collaborative UI/UX project',
- desc:'A collaborative design project with two groupmates, focused on visual design, interface, and user experience.',
+ desc:'My first-year project. A collaborative design project, focused on visual design, interface, and user experience.',
  roles:['UI/UX Designer'],tags:['Figma'],tech:['Figma'],
  focus:['Visual design','User interface','User experience','Design decisions','Prototype screens']},
 {slug:'museum-attendance',n:'04',cat:'QA / Testing',title:'Museum Attendance Monitoring System',sub:'Bukidnon Studies Center · Bukidnon State University',
