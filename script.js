@@ -17,7 +17,7 @@ const P=[
  roles:['UI/UX Designer'],tags:['Figma'],tech:['Figma'],
  focus:['Visual design','User interface','User experience','Design decisions','Prototype screens']},
 {slug:'museum-attendance',n:'04',cat:'QA / Testing',title:'Museum Attendance Monitoring System',sub:'Bukidnon Studies Center · Bukidnon State University',
- desc:'An academic attendance monitoring project, where my contribution centered on testing.',
+ desc:'An academic attendance monitoring project, where my contribution centered on testing.',contribution:'My contribution focused on QA and testing, including test-case organization, test execution documentation, defect identification, and exploratory testing.',testCases:'assets/Museum-Attendance-Test-Cases-Portfolio.xlsx',
  roles:['QA / Testing Lead','Test-case organization'],tags:[]},
 {slug:'tesda',n:'05',cat:'Web Project',title:'TESDA Training Center Web Project',sub:'Academic web project',
  desc:'An academic, web-based project for a training center.',roles:['Assessing the entire workflow of the project. Presented as a project manager for the project.'],tags:[]}
@@ -55,12 +55,12 @@ function render(slug){
  ${sec('Overview',`<p>${esc(p.desc)}</p>`)}
  ${sec('Problem',p.problem?`<p>${esc(p.problem)}</p>`:'')}
  ${sec('My role',ul(p.roles))}
+ ${p.contribution?sec('My contribution',`<p>${esc(p.contribution)}</p><p><a class="btn p" href="${p.testCases}" download>DOWNLOAD TEST CASES ↗</a></p>`):''}
  ${sec('Features',ul(p.features))}
  ${sec('Design focus',ul(p.focus))}
  ${sec('Technologies',ul(p.tech))}
  ${sec('Note',p.note?`<p>${esc(p.note)}</p>`:'')}
- ${samples(p)}
- <a class="back mono" href="#/">← Back to work</a>`;
+ ${samples(p)}`;
  show(true);window.scrollTo(0,0);document.title=p.title+' — Danica M. Pahanggin';
 }
 function show(c){$('#home').hidden=c;$('#case').hidden=!c;if(!c)document.title='Danica M. Pahanggin — BSIT Portfolio'}
